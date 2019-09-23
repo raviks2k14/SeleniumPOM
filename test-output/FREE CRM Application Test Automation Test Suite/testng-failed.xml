@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FREE CRM Application Test Automation Test Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Free CRM App Test Cases(failed)" parallel="classes">
+    <classes>
+      <class name="com.rvks.pom.testcases.LandingPageTest">
+        <methods>
+          <include name="testSignUpLink"/>
+          <include name="testLoginLink"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="clickLoginLink"/>
+        </methods>
+      </class> <!-- com.rvks.pom.testcases.LandingPageTest -->
+      <class name="com.rvks.pom.testcases.LoginPageTest">
+        <methods>
+          <include name="loginCRMTest"/>
+          <include name="validatePasswordTxtBoxTest"/>
+          <include name="tearDown"/>
+          <include name="validateEmailTxtBoxTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.rvks.pom.testcases.LoginPageTest -->
+      <class name="com.rvks.pom.testcases.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickNewContactsLinkTest"/>
+          <include name="validateNewContactsLinkTest"/>
+        </methods>
+      </class> <!-- com.rvks.pom.testcases.ContactsPageTest -->
+      <class name="com.rvks.pom.testcases.HomePageTest">
+        <methods>
+          <include name="validateContactsLinkTest"/>
+          <include name="setUp"/>
+          <include name="clickContactsLinkTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.rvks.pom.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Free CRM App Test Cases(failed) -->
+</suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
